@@ -1,0 +1,31 @@
+<div class="main row">
+	<div class="col-md-6">
+		<h2>Contact</h2>
+		<div>
+			<form novalidate class="contact-form">
+				<fieldset class="form-inline">
+					<label for="fname">First Name: </label>
+					<input id="fname" type="text" class="form-control" ng-model="contact.fname" ngMaxLength="30" autofocus required />
+					<label for="lname">Last Name: </label>
+					<input id="lname" type="text" class="form-control pull-right" ng-model="contact.lname" ngMaxLength="30" required />
+				</fieldset>
+				<fieldset class="form-inline">
+					<label for="email">Email: </label>
+					<input id="email" type="email"  class="form-control pull-right" ng-model="contact.email" required /><br/>
+	    		</fieldset>
+	    		<fieldset class="form-inline">
+	    			<label for="subject">Subject: </label>
+		    		<input id="subject" type="text"  class="form-control pull-right" ng-model="contact.subject" required /><br/>
+		    	</fieldset> 
+	    		<fieldset class="form-inline">
+    				<label for="message">Message: </label>
+    				<textarea rows="5" id="message" class="form-control pull-right" ng-model="contact.email" required></textarea><br/>
+	    		</fieldset>
+    			<input id="submit" type="submit" class="pull-right" ng-click="update(user)" value="Submit" />
+  			</form>
+		</div>
+	</div>
+	<div class="col-md-6">
+	
+	</div>
+</div>

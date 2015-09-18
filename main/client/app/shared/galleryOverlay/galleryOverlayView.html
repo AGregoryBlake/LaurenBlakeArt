@@ -1,0 +1,17 @@
+<div class="overlay-backdrop"></div>
+<div class="overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 overlay-spacer"></div>		
+			<div class="col-md-8 overlay-main">
+				<p class="pull-right" ng-click="hideOverlay()">X</p>
+				<img class="img-responsive" ng-src="{{ photoClicked.url }}">
+				<h2 class="photo-title"> {{ photoClicked.title }} </h2>
+				<p class="photo-author"> {{ photoClicked.author }}</p>
+  				<p class="photo-views"> {{ photoClicked.pubdate | date }}</p>
+				<p class="photo-upvotes"> {{ photoClicked.upvotes | number }} </p>
+				<p class="photo-pubdate"> {{ photoClicked.views | number }}</p>
+			</div>
+   		</div>
+   	</div>
+</div>

@@ -1,0 +1,191 @@
+html, body {
+  	background: #fff;
+  	font-family: 'Fauna One', serif;
+	font-variant: small-caps;
+  	margin: 0;
+  	padding: 0;
+}
+
+.header {
+	height: 85px;
+	border-bottom: 1px solid;
+	border-bottom-style: dotted;
+}
+
+.logo {
+	float: left;
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 15px;
+}
+	.logo * {
+		display: block;
+	}
+
+	.logo a {
+		font-size: 40px;
+		font-weight: bold;
+		color: #3b23ae;
+		font-family: 'Raleway', sans-serif;
+		line-height: 40px;
+		margin-top: -15px;
+	}
+
+	.logo p {
+		line-height: 20px;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		padding-left: 10px;
+	}
+
+.header nav {
+	height: 60px;
+	position: relative;
+}
+
+.header nav ul {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.header nav > ul > li {
+	display: inline;
+	font-size: 20px;
+	margin-right: 20px;
+	color: #3b23ae;
+}
+
+.header nav ul li a {
+	color: #3b23ae;
+}
+
+li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    padding:0px 70px;
+	margin-top: -5px;    
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+    background: white;
+    width: 100px;
+}
+
+.sub-menu li a {
+    display:block;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.main {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.item img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer {
+	border-top: 1px solid;
+	border-top-style: dotted;
+}
+
+.footer p {
+	padding-left: 10px;
+}
+
+.artist-photo {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.header nav {
+	height: 60px;
+	position: relative;
+}
+
+.footer nav ul {
+	position: absolute;
+	right: 0px;
+}
+
+.footer nav ul li {
+	display: inline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.overlay-backdrop, .overlay {
+	position: absolute;	
+	top: 0;
+	left: 0;
+}
+
+.overlay-backdrop {
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	opacity: 0.8;
+	background-color: #000000;
+}
+
+.overlay {
+	z-index: 10000;
+	color: #fff;
+	width: 100%;
+}
+
+.selected-photo {
+	top:35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#email, #subject, #message {
+	width: 90%
+}
+
+.contact-form {
+	min-height: 50vh;
+}
+
+fieldset {
+	padding: 1px;
+}
+
+.overlay-spacer {
+	min-width: 100px;
+}
+
+.overlay-main {
+	display: block
+}
+
+.overlay-main img {
+	width: 100%;
+}
+
+.overlay-main :not(img)  {
+	margin-right: 15px;
+	margin-left: 15px;
+}
