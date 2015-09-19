@@ -13,18 +13,7 @@
     
     <!-- Include the AngularJS routing library -->
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
-  </head>
-  <body ng-app="GalleryApp">
-  	<div class="container">
-
-		<site-header></site-header>
-
-    	<div ng-view></div>
     
-    	<site-footer></site-footer>
-
-	</div>
-
     <!-- Modules -->
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
@@ -38,9 +27,20 @@
 	<script src="app/shared/header/headerDirective.js"></script>
 	<script src="app/shared/footer/footerDirective.js"></script>
 	<script src="app/shared/galleryOverlay/galleryOverlayDirective.js"></script>
+	<script src="app/shared/gallerySample/gallerySampleDirective.js"></script>
 
     <!-- Services -->
     <script src="app/components/home/photos.js"></script>
+  </head>
+  <body ng-app="GalleryApp">
+  	<div class="container">
 
+		<site-header></site-header>
+
+    	<div ng-view></div>
+    
+    	<site-footer></site-footer>
+
+	</div>
   </body>
 </html>

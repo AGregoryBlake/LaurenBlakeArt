@@ -1,15 +1,8 @@
 <div class="overlay-backdrop"></div>
 <div class="overlay">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2 overlay-spacer"></div>		
-			<div class="col-md-8 overlay-main">
-				<p class="pull-right" ng-click="hideOverlay()">X</p>
-				<img class="img-responsive" ng-src="{{ photoClicked.fullSizeUrl }}">
-				<h2 class="showpiece-title"> {{ photoClicked.title }} </h2>
-				<p class="showpiece-medium"> {{ photoClicked.medium}} </p>
-				<p class="showpiece-finished"> {{ photoClicked.year }}</p>
-			</div>
-   		</div>
-   	</div>
+	<p class="pull-right" ng-click="hideOverlay()">X</p>
+	<img class="img-responsive" ng-src="{{ photoClicked.fullSizeUrl }}">
+	<h2 class="showpiece-title"> {{ photoClicked.title }} </h2>
+	<p class="showpiece-medium"> {{ photoClicked.medium}} </p>
+	<p class="showpiece-finished"> {{ photoClicked.year }}</p>
 </div>
