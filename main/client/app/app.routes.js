@@ -8,15 +8,7 @@ app.config(function ($routeProvider) {
       controller: 'ProductController',
       templateUrl: 'app/components/product/productView.html'
     })
-    .when('/gallery/illustration', {
-        controller: "GalleryController",
-        templateUrl: "app/components/gallery/galleryView.html"
-    })
-    .when('/gallery/fine-art', {
-        controller: "GalleryController",
-        templateUrl: "app/components/gallery/galleryView.html"
-        	})
-    .when('/gallery/concept-art', {
+    .when('/gallery/:id', {
         controller: "GalleryController",
         templateUrl: "app/components/gallery/galleryView.html"
     })

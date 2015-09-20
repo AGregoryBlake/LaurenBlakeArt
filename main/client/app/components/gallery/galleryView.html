@@ -1,8 +1,8 @@
 <div class="main">
-	<h2>Gallery</h2>
+	<h2>{{ gallery.galleryName }}</h2>
     <div class="row">
-      <div class="item col-md-4" ng-repeat="photo in photos">
-          <img class="img-responsive pointer" ng-src="{{ photo.thumbnailUrl }}" ng-click="displayOverlay(photo)">
+      <div class="item col-md-4" ng-repeat="image in gallery.images">
+          <img class="img-responsive pointer" ng-src="{{ image.thumbnailUrl }}" ng-click="displayOverlay(image)">
       </div>
     </div>
     <gallery-overlay ng-show="overlayShowing"></gallery-overlay>
