@@ -161,10 +161,11 @@ h2 {
 	position: absolute;	
 	top: 0;
 	left: 0;
+	position: fixed;
 }
 
 .overlay-backdrop {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	z-index: 9999;
 	opacity: 0.8;

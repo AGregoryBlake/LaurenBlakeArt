@@ -71,11 +71,32 @@ app.factory('galleryService', [function() {
 			galleryName: "Fine Art",
 			images: [
 			         {
-			        	 "title": "Barn",
-			        	 "thumbnailUrl": "/assets/img/art/BarnThumbnail.jpg",
-			        	 "fullSizeUrl": "/assets/img/art/BarnFullSize.jpg",
-			        	 "medium": "Digital Painting",
-			        	 "year": "2010"
+			        	 "title": "Hand and Ball",
+			        	 "thumbnailUrl": "/assets/img/art/fineart/handball.jpg",
+			        	 "fullSizeUrl": "/assets/img/art/fineart/handball.jpg",
+			        	 "medium": "Charcoal",
+			        	 "year": "2015"
+			         },
+			         {
+			        	 "title": "Richard",
+			        	 "thumbnailUrl": "/assets/img/art/fineart/richard.jpg",
+			        	 "fullSizeUrl": "/assets/img/art/fineart/richard.jpg",
+			        	 "medium": "Charcoal",
+			        	 "year": "2015"
+			         },
+			         {
+			        	 "title": "Chelsea",
+			        	 "thumbnailUrl": "/assets/img/art/fineart/chelsea.jpg",
+			        	 "fullSizeUrl": "/assets/img/art/fineart/chelsea.jpg",
+			        	 "medium": "Charcoal",
+			        	 "year": "2015"
+			         },
+			         {
+			        	 "title": "Serenade",
+			        	 "thumbnailUrl": "/assets/img/art/fineart/serenade.jpg",
+			        	 "fullSizeUrl": "/assets/img/art/fineart/serenade.jpg",
+			        	 "medium": "Charcoal",
+			        	 "year": "2015"
 			         }
 			        ]
 	};
