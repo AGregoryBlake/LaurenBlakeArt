@@ -12,5 +12,4 @@ app.controller('GalleryController', ['$scope', '$routeParams', 'galleryService',
 	};
 
 	$scope.gallery = galleryService.assignGallery($routeParams.id);
-
 }]);

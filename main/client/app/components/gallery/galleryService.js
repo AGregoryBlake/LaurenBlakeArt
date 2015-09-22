@@ -1,7 +1,7 @@
 app.factory('galleryService', [function() {
 	galleryService = {};
 
-	conceptArt = {
+	var conceptArt = {
 			galleryName: "Concept Art",
 	        images: [
 	                 {
@@ -13,7 +13,7 @@ app.factory('galleryService', [function() {
 	                 }
 	                ]
 	};
-	illustration = {
+	var illustration = {
 			galleryName: "Illustration",
 			images: [
 			         {
@@ -67,7 +67,7 @@ app.factory('galleryService', [function() {
 			         }
 			        ]
 		};
-	fineArt = {
+	var fineArt = {
 			galleryName: "Fine Art",
 			images: [
 			         {
@@ -100,7 +100,7 @@ app.factory('galleryService', [function() {
 			         }
 			        ]
 	};
-	error = {
+	var error = {
 			galleryName: "Error: Gallery Not Found",
 			images: []
 	};
