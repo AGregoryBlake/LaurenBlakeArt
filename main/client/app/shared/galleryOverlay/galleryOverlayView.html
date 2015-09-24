@@ -1,5 +1,5 @@
 <div class="overlay-backdrop"></div>
-<div class="overlay" auto-focus ng-keydown="pressEsc($event)" tabindex="1" focus-me="overlayShowing">
+<div class="overlay" ng-keydown="overlayKeyHandler($event)" tabindex="1" focus-here="overlayShowing">
 	<a class="close" ng-click="hideOverlay()">&times;</a>
 	<img class="showpiece-image img-responsive" ng-src="{{ photoClicked.fullSizeUrl }}">
 	<div>
