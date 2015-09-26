@@ -182,20 +182,35 @@ h2 {
     max-height: 100vh;
 }
 
-.overlay > div, .overlay .close {
+.overlay > div, .overlay .close, .overlay .arrow {
 	position: absolute;
 }
 
-.overlay .close {
+.overlay .close, .overlay .arrow {
 	font-size: 30px;
 	color: #fff;
 	text-shadow: 2px 0 #000;
 	opacity: 1.0;
+}
+
+.overlay .close {
 	right: 8px;
 }
 
 .overlay .close:hover {
 	background-color: transparent;
+}
+
+.overlay .arrow {
+    top: 45%;
+}
+
+.overlay .left {
+	left: 0;
+}
+
+.overlay .right {
+	right: 0;
 }
 
 .showpiece-image {

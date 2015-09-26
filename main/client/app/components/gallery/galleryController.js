@@ -20,18 +20,18 @@ app.controller('GalleryController', ['$scope', '$routeParams', 'galleryService',
 		if (e.which === ESC_KEY){
 			$scope.hideOverlay();
 		} else if (e.which === LEFT_KEY) {
-			goLeft();
+			$scope.goLeft();
 		} else if (e.which === RIGHT_KEY) {
-			goRight();
+			$scope.goRight();
 		}
 	};
 	
-	var goLeft = function() {
+	$scope.goLeft = function() {
 		$scope.index--;
 		normalizeIndex();
 	};
 	
-	var goRight = function() {
+	$scope.goRight = function() {
 		$scope.index++;
 		normalizeIndex();
 	}

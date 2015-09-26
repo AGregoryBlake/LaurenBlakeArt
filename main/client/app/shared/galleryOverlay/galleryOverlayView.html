@@ -1,5 +1,6 @@
 <div class="overlay-backdrop"></div>
 <div class="overlay" ng-keydown="overlayKeyHandler($event)" tabindex="1" focus-here="overlayShowing">
+	<h1 class="left arrow" ng-click="goLeft()">&#10092;</h1>
 	<a class="close" ng-click="hideOverlay()">&times;</a>
 	<img class="showpiece-image img-responsive" ng-src="{{ photoClicked.fullSizeUrl }}">
 	<div>
@@ -7,4 +8,5 @@
 		<p class="showpiece-medium"> {{ photoClicked.medium}} </p>
 		<p class="showpiece-finished"> {{ photoClicked.year }}</p>
 	</div>
+	<h1 class="right arrow" ng-click="goRight()">&#10093;</h1>
 </div>
