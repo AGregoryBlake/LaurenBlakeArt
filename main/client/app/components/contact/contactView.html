@@ -19,9 +19,9 @@
 		    	</fieldset> 
 	    		<fieldset class="form-inline">
     				<label for="message">Message: </label>
-    				<textarea rows="5" id="message" class="form-control pull-right" ng-model="contact.email" required></textarea><br/>
+    				<textarea rows="5" id="message" class="form-control pull-right" ng-model="contact.message" required></textarea><br/>
 	    		</fieldset>
-    			<input id="submit" type="submit" class="pull-right" ng-click="update(user)" value="Submit" />
+    			<button id="send" type="submit" class="pull-right" ng-click="send(contact)">Submit</button>
   			</form>
 		</div>
 	</div>
