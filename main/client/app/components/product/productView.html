@@ -1,10 +1,9 @@
-<div class="photo">
-  <div class="container">
-    <img ng-src="{{ detail.url }}">
-    <h2 class="photo-title"> {{ detail.title }} </h2>
-    <p class="photo-author"> {{ detail.author }}</p>
-    <p class="photo-views"> {{ detail.pubdate | date }}</p>
-    <p class="photo-upvotes"> {{ detail.upvotes | number }} </p>
-    <p class="photo-pubdate"> {{ detail.views | number }}</p>
-  </div>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+    	<img class="img-responsive" ng-src="{{ product.thumbnailUrl }}">
+    	<p class="pull-left"> {{ product.title }} </h2>
+    	<p class="pull-right"> {{ product.price | currency }}</p>
+  	</div>
+  	<div class="col-md-3"></div>
 </div>

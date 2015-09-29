@@ -142,6 +142,11 @@ h2 {
 	font-weight: 400;
 }
 
+.img-responsive {
+	max-height: 80vh;
+	margin-top: 30px;
+}
+
 
 .footer {
 	border-top: 1px dotted;

@@ -97,7 +97,8 @@ app.service('imageService', [function() {
 			    	  "medium": "Charcoal",
 			    	  "year": "2015",
 			    	  "gallery": "Fine Art",
-			    	  "forSale": false
+			    	  "forSale": true,
+			    	  "price": 300
 			      },
 			      {
 			    	  "title": "Serenade",
@@ -106,7 +107,8 @@ app.service('imageService', [function() {
 			    	  "medium": "Charcoal",
 			    	  "year": "2015",
 			    	  "gallery": "Fine Art",
-			    	  "forSale": false
+			    	  "forSale": true,
+			    	  "price": 300
 			      }
 			     ];
 	return {
@@ -120,7 +122,7 @@ app.service('imageService', [function() {
 		},
 		getImagesForSale: function() {
 			return images.filter(function(image) {
-				image.forSale === true;
+				return image.forSale;
 			});
 		}
 	};
