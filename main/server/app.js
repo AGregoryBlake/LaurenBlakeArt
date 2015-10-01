@@ -1,4 +1,4 @@
-express = require('express');
+var express = require('express');
 var app = module.exports = express.createServer();
 
 require('./routes');

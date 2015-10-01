@@ -1,1 +1,1 @@
-var app = angular.module('GalleryApp', ['ngRoute']);
+var app = angular.module('GalleryApp', ['ngRoute', 'ngResource']);
