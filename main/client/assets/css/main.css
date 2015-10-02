@@ -15,10 +15,13 @@ html, body {
 	margin-right: -30px;
 }
 
+a:hover, .header nav > ul > li:hover, a:hover *, a:focus {
+	text-decoration: none;
+}
+
 a:hover, .header nav > ul > li:hover, a:hover * {
 	color: #3b23ae;
-	text-decoration: none;
-	background-color: #c5cef9;
+	background-color: #c5cef9;	
 }
 
 .container {

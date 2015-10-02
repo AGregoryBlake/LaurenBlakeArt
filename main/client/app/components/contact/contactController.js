@@ -19,6 +19,8 @@ app.controller('ContactController', ['$scope', '$resource', function($scope, $re
 		var Email = $resource('/sendmail');
 		Email.save($scope.contact, function() {
 			// Stuff after POST success happens here.
+		}, function(error){
+			console.log(error);
 		});
 	};
 }]);
