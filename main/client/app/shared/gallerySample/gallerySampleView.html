@@ -1,7 +1,7 @@
 <a href="{{ gallery.galleryUrl }}">
 	<div class="gallery col-md-4">
-		<div class="item" ng-repeat="gallerySample in gallery.gallerySamples">
-			<img class="img-responsive" ng-src="{{ gallerySample.url }}">
+		<div ng-repeat="gallerySample in gallery.gallerySamples">
+			<img class="img-responsive item" ng-src="{{ gallerySample.thumbnailUrl }}">
 		</div>
 		<div>
 			<p class="gallery-name pull-right">{{ gallery.galleryName }}</p>

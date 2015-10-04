@@ -110,16 +110,17 @@ li:hover .sub-menu {
 h2 {
 	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0px;
 }
 
 .main {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
 .item {
-	padding-top: 15px;
-	padding-bottom: 15px;	
+	padding-top: 25px;
+	padding-bottom: 5px;	
 }
 
 .item img {
@@ -129,7 +130,6 @@ h2 {
 .gallery-name {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-	margin-top: -10px;
 }
 
 .artist-photo {
