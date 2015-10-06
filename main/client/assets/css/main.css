@@ -6,6 +6,10 @@ html, body {
   	padding: 0;
 }
 
+.spacer {
+	margin-top: 10px;
+}
+
 .container, a {
 	color: #0B071F;	
 }
@@ -42,26 +46,27 @@ a:hover, .header nav > ul > li:hover, a:hover * {
 	padding-left: 30px;
 	padding-top: 15px;
 }
-	.logo * {
-		display: block;
-	}
 
-	.logo a {
-		font-size: 40px;
-		font-weight: bold;
-		color: #3b23ae;
-		font-family: 'Raleway', sans-serif;
-		line-height: 40px;
-		margin-top: -15px;
-	}
+.logo * {
+	display: block;
+}
 
-	.logo p {
-		line-height: 20px;
-		font-size: 20px;
-		margin-top: 10px;
-		margin-bottom: 0px;
-		padding-left: 10px;
-	}
+.logo a {
+	font-size: 40px;
+	font-weight: bold;
+	color: #3b23ae;
+	font-family: 'Raleway', sans-serif;
+	line-height: 40px;
+	margin-top: -15px;
+}
+
+.logo p {
+	line-height: 20px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+}
 
 .header nav {
 	height: 60px;
@@ -148,6 +153,7 @@ h2 {
 .product-image {
 	max-height: 80vh;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 
@@ -193,17 +199,20 @@ h2 {
 	background-color: black;
 }
 
+.overlay, .product {
+	color: #fff;
+	max-height: 100vh;	
+}
+
 .overlay {
 	z-index: 10000;
-	color: #fff;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    max-height: 100vh;
 }
 
-.overlay > div, .overlay .close, .overlay .arrow {
+.overlay > div, .overlay .close, .overlay .arrow, .product > div {
 	position: absolute;
 }
 
@@ -241,17 +250,25 @@ h2 {
 	max-height: 100vh;
 }
 
-.overlay p {
+.overlay p, .product p {
 	margin: 0px;
 	font-size: 15px;
 	font-family: 'Raleway', sans-serif;
 	text-shadow: 2px 0 #000;
 }
 
-.overlay > div {
+.overlay > div, .product > div {
 	bottom: 0px;
 	margin-left: 15px;
+;
+}
+
+.overlay > div {
 	margin-bottom: 15px;
+}
+
+.product > div {
+	margin-bottom: 45px;
 }
 
 #email, #subject, #message {
