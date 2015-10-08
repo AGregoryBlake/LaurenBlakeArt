@@ -14,7 +14,7 @@
     		</fieldset>
     		<fieldset class="form-inline">
     			<label for="subject">Subject: </label>
-	    		<input id="subject" type="text"  class="form-control pull-right" ng-model="contact.subject" required /><br/>
+	    		<input id="subject" type="text"  class="form-control pull-right" ng-model="contact.subject" ng-readonly="::contact.subject" required /><br/>
 	    	</fieldset> 
     		<fieldset class="form-inline">
    				<label for="message">Message: </label>

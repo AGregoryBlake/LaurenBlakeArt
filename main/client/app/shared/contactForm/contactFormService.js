@@ -7,7 +7,8 @@ app.service('contactFormService', ['$resource', function($resource) {
 			message: ""
 	};
 	return {
-		getContactForm: function() {
+		getContactForm: function(subject) {
+			contactForm.subject = subject;
 			return contactForm;
 		},
 		send: function(contact) {
