@@ -20,7 +20,9 @@
    				<label for="message">Message: </label>
    				<textarea rows="5" id="message" class="form-control pull-right" ng-model="contact.message" required></textarea><br/>
     		</fieldset>
-   			<button id="send" type="submit" class="pull-right" ng-click="send(contact)">Submit</button>
+    		<p class="error" ng-show="contact.error">{{contact.error}}</p>
+   			<button id="send" type="submit" class="pull-right" ng-click="contact.send()" ng-hide="contact.success">Submit</button>
+   			<p class="pull-right" ng-show="contact.success">Message sent.</button>
 		</form>
 	</div>
 </div>
