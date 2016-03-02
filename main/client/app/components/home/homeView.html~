@@ -1,5 +1,6 @@
 <div class="main">
     <div class="row">
+	<p>{ galleries }</p>
     	<gallery-sample ng-repeat="gallery in galleries"></gallery-sample>
     </div>
 </div>

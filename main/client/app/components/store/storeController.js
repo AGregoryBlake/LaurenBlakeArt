@@ -1,3 +1,6 @@
-app.controller('StoreController', ['$scope', 'storeService', function($scope, storeService) {
-	$scope.products = storeService.getProducts();
+app.controller('StoreController', ['$scope', '$timeout', 'imageService', function($scope, $timeout, imageService) {
+    $scope.products = imageService.getImagesForSale();
+    $timeout(function() {
+	$scope.products = imageService.getImagesForSale();
+    }, 100);
 }]);

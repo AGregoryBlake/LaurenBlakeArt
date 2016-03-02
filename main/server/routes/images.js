@@ -57,8 +57,8 @@ var images = [
     },
     {
 	"title" : "Tiger Lily",
-	"thumbnailUrl" : "/assets/img/art/TigerLilyThumbnail.jpg",
-	"fullSizeUrl" : "/assets/img/art/TigerLilyFullSize.jpg",
+	"thumbnailUrl" : "https://s3-us-west-2.amazonaws.com/lauren-blake-art/TigerLilyThumbnail.jpg",
+	"fullSizeUrl" : "https://s3-us-west-2.amazonaws.com/lauren-blake-art/TigerLilyFullSize.jpg",
 	"medium" : "Digital Painting",
 	"year" : "2010",
 	"gallery" : "Illustration",
@@ -116,4 +116,26 @@ var images = [
 app.get('/images', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(images));
+});
+
+app.post('/images', function (req, res, next) {
+    res.status(200).send('Success!');
+});
+
+app.get('/images/:id', function(req, res, next) {
+    var id = req.params.id;
+    res.setHeader('Content-Type', 'application/json');
+    res.send(images[id]);
+});
+
+app.put('/images/:id', function(req, res, next) {
+    var id = req.params.id;
+    res.setHeader('Content-Type', 'application/json');
+    res.send(images[id]);
+});
+
+app.delete('/images/:id', function(req, res, next) {
+    var id = req.params.id;
+    res.setHeader('Content-Type', 'application/json');
+    res.send(images[id]);
 });
